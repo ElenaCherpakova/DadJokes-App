@@ -45,7 +45,6 @@ class Joke extends Component {
     return 'em em-angry';
   }
 
-
   render() {
     const { votes, text, upVote, downVote } = this.props;
     return (
@@ -60,7 +59,7 @@ class Joke extends Component {
         <div className='Joke-text'>{text}</div>
         <div className='Joke-smiley'>
           <i
-            class={this.getEmoji()}
+            className={this.getEmoji()}
             aria-label='ROLLING ON THE FLOOR LAUGHING'></i>
         </div>
       </div>

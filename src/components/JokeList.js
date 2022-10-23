@@ -3,19 +3,26 @@ import axios from 'axios';
 import Joke from './Joke';
 import laughIcon from '../assets/laugh.png';
 import uuid from 'react-uuid';
-
 import './JokeList.css';
 const API_URL = 'https://icanhazdadjoke.com/';
+
 class JokeList extends Component {
   static defaultProps = {
     numJokesToGet: 10,
   };
   constructor(props) {
     super(props);
-    this.state = { jokes: [] };
+    this.state = {
+      jokes: JSON.parse(window.localStorage.getItem('jokes') || '[]'),
+    };
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  async componentDidMount() {
+  componentDidMount() {
+    if (!this.state.jokes.length === 0) this.getJokes();
+  }
+
+  async getJokes() {
     let jokes = [];
     while (jokes.length < this.props.numJokesToGet) {
       let response = await axios.get(API_URL, {
@@ -23,15 +30,29 @@ class JokeList extends Component {
       });
       jokes.push({ id: uuid(), text: response.data.joke, votes: 0 });
     }
-    this.setState({ jokes: jokes });
+    this.setState(
+      (prevState) => ({
+        jokes: [...prevState.jokes, ...jokes],
+      }),
+      () =>
+        window.localStorage.setItem('jokes', JSON.stringify(this.state.jokes)),
+    );
   }
 
   handleVote(id, delta) {
-    this.setState((prevState) => ({
-      jokes: prevState.jokes.map((j) =>
-        j.id === id ? { ...j, votes: j.votes + delta } : j,
-      ),
-    }));
+    this.setState(
+      (prevState) => ({
+        jokes: prevState.jokes.map((j) =>
+          j.id === id ? { ...j, votes: j.votes + delta } : j,
+        ),
+      }),
+      () =>
+        window.localStorage.setItem('jokes', JSON.stringify(this.state.jokes)),
+    );
+  }
+
+  handleClick() {
+    this.getJokes();
   }
 
   render() {
@@ -43,7 +64,9 @@ class JokeList extends Component {
           </h1>
           <div className='JokeList-circle'>
             <img src={laughIcon} alt='laughIcon' />
-            <button className='JokeList-getmore'>New Jokes</button>
+            <button className='JokeList-getmore' onClick={this.handleClick}>
+              New Jokes
+            </button>
           </div>
         </div>
 
