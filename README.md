@@ -13,7 +13,7 @@
 - fetch new jokes; 
 - rate jokes;
 
-What I've learnt: 
+### I've learned and have been refreshed on:
 
 - fetch data from the API using axios get method;
 - manipulate state in React class-based components;
