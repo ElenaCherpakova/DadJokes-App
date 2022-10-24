@@ -16,7 +16,7 @@
 ## Screenshot
 
 <div align="center">
-<img src="https://github.com/ElenaCherpakova/DadJokes-App/blob/1fc10e3242e8074f7cb2e94ef2bd5c52d34e9b45/public/photos/screenShot.png" width="800"/> 
+<img src="https://github.com/ElenaCherpakova/DadJokes-App/blob/8223c7dfca9447aac841cb84697f28518acd454c/public/photos/screenShot.png" width="800"/> 
 </div>
 
 
