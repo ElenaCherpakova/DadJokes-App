@@ -15,7 +15,7 @@
 - fetch new jokes; 
 - rate jokes;
 
-##Screenshot
+## Screenshot
 
 <div align="center">
 <img src="https://github.com/ElenaCherpakova/DadJokes-App/blob/1fc10e3242e8074f7cb2e94ef2bd5c52d34e9b45/public/photos/screenShot.png" width="800"/> 
