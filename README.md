@@ -20,8 +20,8 @@
 - store data locally in the browser using localStorage;
 
 ### Dependencies
-- react "^18.2.0",
-- axios: "^1.1.3",
+- react 18.2.0,
+- axios
 
 ## Screenshot
 
