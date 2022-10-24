@@ -1,4 +1,4 @@
-## Dad Jokes
+# Dad Jokes
 
 <p>This is a collection of dad jokes.</p>
 
