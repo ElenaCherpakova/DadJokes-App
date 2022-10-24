@@ -13,7 +13,7 @@
 
 ### User can:
 - fetch new jokes; 
-- rate a joke (up/down)
+- rate jokes;
 
 ##Screenshot
 
