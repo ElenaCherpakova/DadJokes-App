@@ -89,7 +89,7 @@ class JokeList extends Component {
       <div className='JokeList'>
         <div className='JokeList-sidebar'>
           <h1 className='JokeList-title'>
-            <span>Dad</span> Joke
+            <span>Dad</span> Jokes
           </h1>
           <div className='JokeList-circle'>
             <img src={laughIcon} alt='laughIcon' />
