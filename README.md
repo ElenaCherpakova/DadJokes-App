@@ -20,7 +20,7 @@
 - store data locally in the browser using localStorage;
 
 ### Dependencies
-- react 18.2.0,
+- react 18.2.0
 - axios
 
 ## Screenshot
