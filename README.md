@@ -1,8 +1,6 @@
 # Dad Jokes 
 <p>This is a collection of dad jokes.</p>
 
-
-
 ### Running the project
   
 * Clone the repository onto your local device.
