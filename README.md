@@ -13,9 +13,19 @@
 - fetch new jokes; 
 - rate jokes;
 
+What I've learnt: 
+
+- fetch data from the API using axios get method;
+- manipulate state in React class-based components;
+- store data locally in the browser using localStorage;
+
+### Dependencies
+- react "^18.2.0",
+- axios: "^1.1.3",
+
 ## Screenshot
 
-<div align="center">
+<div text-align="center">
 <img src="https://github.com/ElenaCherpakova/DadJokes-App/blob/8223c7dfca9447aac841cb84697f28518acd454c/public/photos/screenShot.png" width="800"/> 
 </div>
 
