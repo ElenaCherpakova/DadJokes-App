@@ -59,13 +59,16 @@
   border-radius: 50%;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  padding: 0.2rem;
+  padding: 0.3rem;
+  background: white;
+
 }
 .Joke-smiley:hover {
   animation-name: spin;
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
   animation-delay: 0.2s;
+  background: #a5abec;
 }
 
 @keyframes spin {
