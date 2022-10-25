@@ -25,9 +25,9 @@
 
 ## Screenshot
 
-<div text-align="center">
-<img src="https://github.com/ElenaCherpakova/DadJokes-App/blob/8223c7dfca9447aac841cb84697f28518acd454c/public/photos/screenShot.png" width="800"/> 
-</div>
+![ss](https://github.com/ElenaCherpakova/DadJokes-App/blob/8223c7dfca9447aac841cb84697f28518acd454c/public/photos/screenShot.png)
+
+
 
 
 
